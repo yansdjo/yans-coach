@@ -1,0 +1,105 @@
+/* Reset de base pour enlever les marges et le padding par défaut */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corps de la page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111; /* Fond noir pour l'ensemble de la page */
+  color: white;
+  background-image: url('https://raw.githubusercontent.com/yansdjo/programmes-sportifs-/main/background%20(1).jpg'); /* Image d'haltères */
+  background-size: cover; /* Couvre tout l'écran */
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/* En-tête (header) */
+header {
+  text-align: center;
+  padding: 50px;
+  background: rgba(0, 0, 0, 0.7); /* Couleur noire semi-transparente */
+  border-bottom: 5px solid red; /* Bordure rouge sous l'en-tête */
+}
+
+header h1 {
+  font-size: 50px;
+  color: #ff0000; /* Rouge pour le titre */
+  font-weight: bold;
+}
+
+/* Section principale du contenu */
+main {
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6); /* Fond sombre légèrement transparent */
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+/* Style pour les boutons */
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #ff0000; /* Rouge */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #d40000; /* Couleur rouge plus foncée au survol */
+}
+
+/* Liens */
+a {
+  text-decoration: none;
+  color: #ff0000;
+}
+
+a:hover {
+  color: #cc0000;
+}
+
+/* Section avec des informations de programme */
+section.program {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+section.program div {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  width: 30%;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+section.program div h2 {
+  color: #ff0000;
+  font-size: 24px;
+}
+
+section.program div p {
+  color: white;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+  color: white;
+  border-top: 5px solid red;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
